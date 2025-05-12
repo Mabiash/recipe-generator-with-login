@@ -13,7 +13,7 @@ $email = '';
 
 // Process login form
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = sanitize_input($_POST['email']);
+    $email = sanitize_input(data: $_POST['email']);
     $password = $_POST['password'];
     
     // Validate inputs

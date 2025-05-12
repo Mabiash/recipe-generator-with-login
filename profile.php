@@ -26,7 +26,6 @@ $favorites = get_favorite_recipes($conn, $_SESSION['user_id']);
     <main>
         <section class="profile-header">
             <div class="container">
-                <h1>My Profile</h1>
                 <div class="profile-info">
                     <div class="profile-avatar">
                         <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>

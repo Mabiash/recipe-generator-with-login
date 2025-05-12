@@ -34,7 +34,7 @@ include_once 'includes/functions.php';
 
         <section class="featured-recipes">
             <div class="container">
-                <h2>Featured Recipes</h2>
+                <h2>Random Recipes</h2>
                 <div class="recipes-grid" id="featured-recipes-container">
                     <div class="recipe-card skeleton"></div>
                     <div class="recipe-card skeleton"></div>
@@ -58,6 +58,7 @@ include_once 'includes/functions.php';
             </div>
         </section>
 
+        <?php if(!is_logged_in()):?>
         <section class="cta">
             <div class="container">
                 <div class="cta-content">
@@ -68,8 +69,8 @@ include_once 'includes/functions.php';
             </div>
         </section>
     </main>
-
-    <?php include_once 'templates/footer.php'; ?>
+    <?php endif; ?>
+    <?php include_once 'includes/footer.php'; ?>
     
     <script src="js/app.js"></script>
     <script src="js/home.js"></script>
